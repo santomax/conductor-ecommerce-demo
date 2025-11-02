@@ -1,0 +1,113 @@
+{
+  "createTime": 1762040673232,
+  "updateTime": 1762083628020,
+  "name": "E-Commerce Order Processing",
+  "description": "When a customer places an order, this workflow handles everything: payment processing, inventory checks, email confirmations, and shipping coordination. Shows how to build resilient, production-ready automation for e-commerce systems.",
+  "version": 1,
+  "tasks": [
+    {
+      "name": "http",
+      "taskReferenceName": "process_payment",
+      "inputParameters": {
+        "uri": "https://httpbin.org/post",
+        "method": "POST",
+        "accept": "application/json",
+        "contentType": "application/json",
+        "encode": true,
+        "body": {
+          "orderId": "${workflow.input.orderId}",
+          "customerId": "${workflow.input.customerId}",
+          "totalAmount": "${workflow.input.totalAmount}",
+          "paymentMethod": "credit_card"
+        }
+      },
+      "type": "HTTP",
+      "decisionCases": {},
+      "defaultCase": [],
+      "forkTasks": [],
+      "startDelay": 0,
+      "joinOn": [],
+      "optional": false,
+      "defaultExclusiveJoinTask": [],
+      "asyncComplete": false,
+      "loopOver": [],
+      "onStateChange": {},
+      "permissive": false
+    },
+    {
+      "name": "switch",
+      "taskReferenceName": " check_payment_status",
+      "inputParameters": {
+        "paid": "success"
+      },
+      "type": "SWITCH",
+      "decisionCases": {
+        "success": [
+          {
+            "name": "http",
+            "taskReferenceName": "send_confirmation_email",
+            "inputParameters": {
+              "uri": "https://httpbin.org/post",
+              "method": "POST",
+              "accept": "application/json",
+              "contentType": "application/json",
+              "encode": true,
+              "body": {
+                "to": "${workflow.input.customerEmail}",
+                "subject": "Order Confirmation",
+                "orderId": "${workflow.input.orderId}",
+                "message": "Your order has been confirmed!"
+              }
+            },
+            "type": "HTTP",
+            "decisionCases": {},
+            "defaultCase": [],
+            "forkTasks": [],
+            "startDelay": 0,
+            "joinOn": [],
+            "optional": false,
+            "defaultExclusiveJoinTask": [],
+            "asyncComplete": false,
+            "loopOver": [],
+            "onStateChange": {},
+            "permissive": false
+          }
+        ]
+      },
+      "defaultCase": [],
+      "forkTasks": [],
+      "startDelay": 0,
+      "joinOn": [],
+      "optional": false,
+      "defaultExclusiveJoinTask": [],
+      "asyncComplete": false,
+      "loopOver": [],
+      "evaluatorType": "graaljs",
+      "expression": "$.paid",
+      "onStateChange": {},
+      "permissive": false
+    }
+  ],
+  "inputParameters": [
+    "orderId",
+    "customerId",
+    "customerEmail",
+    "totalAmount",
+    "items"
+  ],
+  "outputParameters": {
+    "trackingNumber": ""
+  },
+  "failureWorkflow": "",
+  "schemaVersion": 2,
+  "restartable": true,
+  "workflowStatusListenerEnabled": false,
+  "ownerEmail": "ashleysally00@gmail.com",
+  "timeoutPolicy": "ALERT_ONLY",
+  "timeoutSeconds": 0,
+  "variables": {},
+  "inputTemplate": {},
+  "enforceSchema": true,
+  "metadata": {},
+  "maskedFields": []
+}
