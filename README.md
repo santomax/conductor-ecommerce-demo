@@ -1,10 +1,10 @@
 # E-Commerce Order Processing Workflow
 
-[Watch 2-Minute Demo](#) <br>
+[Watch 2-Minute Demo](#)  
 *Video walkthrough coming soon — showing workflow canvas and execution results*
 
-A production-ready workflow built with Orkes Conductor that automates
-order creation, payment, inventory update, and confirmation.
+Developer demo showing how to build a production-ready e-commerce workflow in Orkes Conductor.  
+The workflow automates order creation, payment processing, inventory updates, and fulfillment confirmation.
 
 ---
 
