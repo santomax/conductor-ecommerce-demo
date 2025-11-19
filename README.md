@@ -271,8 +271,6 @@ End
 ## Resources
 
 - [Orkes Documentation](https://orkes.io/content/)
-- [HTTP Task Reference](https://orkes.io/content/reference-docs/operators/http-task)
-- [Switch Task Reference](https://orkes.io/content/reference-docs/operators/switch-task)
 - [Conductor OSS GitHub](https://github.com/conductor-oss/conductor)
 
 ---
